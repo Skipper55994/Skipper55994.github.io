@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Raleway:600);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+  /*NAV*/
+  nav.navbar {
+  
+  top:100;
+  right: 0;
+  left:0;
+  z-index: 20;
+  font-family: Righteous;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:#FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  background-color: #e7e7e7;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
+.navbar-brand>img {
+	margin-top: -7px;
+}
+
+
+/*END OF NAV*/
+
+
+ /*============CAROUSELL===========*/
+ .carousel {
+	margin-bottom: 0px;
+  font-family: Righteous;
+ }
+
+ .carousel .item {
+ 	width: 100%;
+ 	height: 600px;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+  .shadow {
+   -webkit-box-shadow: 0px -1px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px -1px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px -1px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+ .slide1 {
+ 	background-image: url(../img/street.jpg);
+ }
+
+ .slide2 {
+ 	background-image: url(../img/matrix_wall.jpg);
+ }
+
+ .slide3 {
+ 	background-image: url(../img/blackwhitematrix.jpg);
+ }
+
+.carousel-caption {
+	z-index: 10;
+	padding-bottom: 140px;
+}
+
+
+
+
+
+
+/*CAROUSELL FADE*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+#hero {
+  color: #ffffff;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+#about h2 {
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+#about p {
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+
+
+.jumpwings {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  border-image-width: center;
+ 
+}
+
+
+#about  {
+  float: none;
+  margin: 0 auto;
+  background-color: rgba(20, 20, 20, .6);
+  top: 145px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*END OF CAROUSELL*/
+
+    /*WEBSIGHT IMG*/
+.carlospage>img:hover{
+ transition: all .2s ease-in-out;
+  transform: scale(0.9);
+}
+
+
+
+/*PAGE COLOR*/
+body {
+    background-color: #2a2a2a;
+}
+
+
+
+
+/*JUMBOTRON*/
+.jumbotron {
+  background-image: url("../img/carlosgrafftwo.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.jumbotron-special {
+  background-image: url("../img/carlosgraffone.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+footer {
+  background-color: #231f20;
+  padding-top: 20px;
+  overflow:hidden;
+ /* text-align: center;*/
+}
+
+
+
+footer a {
+  color: #bfc0c1;
+}
+
+.contact-info {
+  padding-top: 15px;
+  padding-left: 40px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  text-align: center;
+}
+
+address>a:hover {
+  color: white;
+}
+
+#copyright {
+    overflow:hidden;
+    padding:30px 0px;
+    border-top:2px solid #00FF99;
+    background-color: #E1E1E1;
+    width:100%;
+    display:block;
+    text-align:center;
+}
+
+#copyright p {
+    letter-spacing:2px;
+    text-align:center;
+    font-size:.75em;
+    color:#000000;
+
+}
+
+.social {
+  margin: inherit;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+/* ==========MY CUSTOM STUFF BELOW ==============*/
+
+.fa {
+    background-color:#00FF99;
+    border:3px 
+    solid #FFFFFF;
+    border-radius:210px;
+    font-size:2em;
+    margin:13px;
+    height:100%;
+   padding:6px;
+    
+}
+
+.fa:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.6);
+  color: white;
+}
+
+
+
+.fa-facebook {background-color:#0C516E;}
+.fa-linkedin {background-color:#007BB6;}
+.fa-instagram {background-color:#675144;}
+
+
+@media (max-width: 768px) {
+
+ .footer-logo {
+  visibility: hidden;
+ }
+
+  .social {
+    text-align: center;
+    font-size: 35px;
+  }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 22px;
+    }
+}
+
+
+
+
